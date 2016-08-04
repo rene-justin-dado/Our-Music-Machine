@@ -2,9 +2,20 @@
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.row {
+
 }
 
 .btn {
   display: flex;
-  
+  justify-content: space-around;
+  align-items: center;
+  height: 102px;
+  width: 102px;
+  background: red;
+  border: solid black 1px;
+  margin: 10px 0px 10px 0px;
 }
