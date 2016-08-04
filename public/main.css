@@ -15,7 +15,9 @@
   align-items: center;
   height: 102px;
   width: 102px;
-  background: red;
+  background: grey;
+  box-shadow: 5px 5px 7px #080808;
   border: solid black 1px;
+  border-radius: 10px;
   margin: 10px 0px 10px 0px;
 }
