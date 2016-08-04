@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+  <title>Edit a user</title>
+</head>
+<body>
+  <form action="/send/{{user.id}}" method="POST">
+    <input type="text" name="name" value="{{user.name}}">
+    <input type="text" name="email" value="{{user.email}}">
+    <button type="submit" name="submit">Add new user</button>
+  </form>
+</body>
+</html>
