@@ -12,6 +12,7 @@ app.engine('hbs', hbs())
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static('public'))
 
 app.get('/', index.bank1)
 
