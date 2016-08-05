@@ -7,7 +7,6 @@ module.exports = {
 }
 
 function bank1 (req, res) {
-  res.render('index')
   knex('drums')
   .select()
   .then(function (drums) {
@@ -16,8 +15,4 @@ function bank1 (req, res) {
   .catch(function (err) {
     res.status(500).send('DATABASE ERROR: ' + err.message)
   })
-}
-
-function error (req, res) {
-  res.send('SOMETHING REALLY REALLY BAD HAPPENED')
 }
