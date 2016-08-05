@@ -1,10 +1,6 @@
-$('document').ready(function () {
-    $('#btn 1').click(function () {
-        var audio = {};
-        audio["walk"] = new Audio();
-        audio["walk"].src = "http://www.rangde.org/static/bell-ring-01.mp3"
-        audio["walk"].addEventListener('load', function () {
-            audio["walk"].play();
-        });
-    });
-});
+$('.sound').on('click',function() {
+ var file = $(this).data('soundfile')
+ var sound = new Audio()
+ sound.src = file
+ sound.play()
+})
