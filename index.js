@@ -2,7 +2,6 @@ var bodyParser = require('body-parser')
 var express = require('express')
 var hbs = require('express-handlebars')
 var path = require('path')
-
 var index = require('./routes/index')
 
 var PORT = 3000

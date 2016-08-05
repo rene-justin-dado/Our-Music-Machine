@@ -8,13 +8,14 @@ module.exports = {
 
 function bank1 (req, res) {
   res.render('index')
-  // knex('bank_1')
-  //   .select()
-  //   .then(function (samples) {
-  //   })
-  //   .catch(function (err) {
-  //     res.status(500).send('DATABASE ERROR: ' + err.message)
-  //   })
+  knex('drums')
+  .select()
+  .then(function (drums) {
+    res.render('index', { drums: drums })
+  })
+  .catch(function (err) {
+    res.status(500).send('DATABASE ERROR: ' + err.message)
+  })
 }
 
 function error (req, res) {
