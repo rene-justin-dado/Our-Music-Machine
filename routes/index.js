@@ -3,17 +3,16 @@ var development = require('../knexfile').development
 var knex = require('knex')(development)
 
 module.exports = {
-  get: get
-
+  bank1: bank1
 }
 
-function get (req, res) {
+function bank1 (req, res) {
   knex('drums')
-    .select()
-    .then(function (drums) {
-      res.render('index', { drums: drums })
-    })
-    .catch(function (err) {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
+  .select()
+  .then(function (drums) {
+    res.render('index', { drums: drums })
+  })
+  .catch(function (err) {
+    res.status(500).send('DATABASE ERROR: ' + err.message)
+  })
 }

@@ -12,7 +12,8 @@ app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
-app.get('/', index.get)
+
+app.get('/', index.bank1)
 
 app.listen(PORT, function () {
   console.log('Listening on port', PORT)
