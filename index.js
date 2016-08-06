@@ -4,7 +4,7 @@ var hbs = require('express-handlebars')
 var path = require('path')
 var index = require('./routes/index')
 
-var PORT = 3000
+var PORT = process.env.PORT || 3000
 
 var app = express()
 app.engine('hbs', hbs())
